@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Traffic Accident Victims Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            color: #767676;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        #chart {
+            margin-top: 20px;
+        }
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+        .axis text {
+            font-size: 12px;
+        }
+        .axis path,
+        .axis line {
+            fill: none;
+            shape-rendering: crispEdges;
+            stroke: #ccc;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Road Traffic Accident Victims in 2022</h1>
+        <h2>Konstantinos Nikoletos | Assignment #3 | 7115112200022</h2>
+        <p>This visualization shows the total number of road traffic accident victims categorized by age group and type for the year 2022. The data is sourced from the Hellenic Statistical Authority (EL.STAT).</p>
+        <div id="chart"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
